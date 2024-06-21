@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(28, 33, 33, 0.8);
+}
+
+nav {
+
+    text-align: right;
+    padding: 10px 20px;
+    margin: 0px;
+
+
+}
+
+a {
+    font-size: 1.2vw;
+    padding: 8px;
+    border-bottom: 2px solid rgb(128, 128, 128);
+    color: rgba(36, 88, 192, 0.695);
+    text-decoration: none;
+}
+
+a:hover {
+    padding: 10px;
+    background: rgba(14, 221, 221, 0.7);
+    color: rgba(36, 88, 192, 1);
+
+    transition: ease-in-out 0.2s;
+    border-radius: 3px;
+
+    
+}
+a:visited {
+    transform: rotate3d(360deg);
+}
+
+* {
+    font-family: monospace;
+    font-weight: 700;
+
+}
