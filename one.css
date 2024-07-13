@@ -1,3 +1,36 @@
-body{
-    color: black;
+.box{
+    height: 50vh;
+    width: 60vw;
+    background: #000;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.line{
+    border-radius: 2px;
+    height: 10%;
+    width:10px;
+    background: white;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: music 1s infinite  ease-in-out alternate;
+    animation-delay: calc((6s/5)*(var(--postion)));
+    
+}
+.box:hover .line{
+    animation-play-state: paused;
+}
+
+
+@keyframes music {
+    from{
+        height: 20%;
+
+    }
+    to{
+        height: 50%;
+    }
+    
 }

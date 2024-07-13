@@ -175,15 +175,42 @@ nav div {
 }
 
 .sound-wave {
+    height: 100%;
     width: fit-content;
+    background: #000;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    
+
 
 }
 
-.sound-wave img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    filter: brightness(4) contrast(5);
+.line{
+    border-radius: 2px;
+    height: 10%;
+    width:2.4px;
+    background: white;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: music 1s infinite  ease-in-out alternate;
+    animation-delay: calc((6s/5)*(var(--postion)));
+    
+}
+.sound-wave:hover .line{
+    animation-play-state: paused;
+}
+
+
+@keyframes music {
+    from{
+        height: 20%;
+
+    }
+    to{
+        height: 70%;
+    }
+    
 }
 
 .nav-items {
